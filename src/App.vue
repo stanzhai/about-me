@@ -2,6 +2,12 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <test-header></test-header>
+    <img src="./assets/favicon.png" />
+    <p>
+      <router-link to="/skill">Skill</router-link>
+      <router-link to="/project">Project</router-link>
+    </p>
+    <router-view></router-view>
   </div>
 </template>
 
