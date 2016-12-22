@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/main.js',
@@ -35,6 +36,10 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.html$/,
+        loader: "raw-loader"
       }
     ]
   },
@@ -43,6 +48,13 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js'
     }
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, 'index.html'),
+      template: 'src/index.html',
+      favicon: 'src/assets/favicon.png'
+    })
+  ],
   devServer: {
     historyApiFallback: true,
     noInfo: true

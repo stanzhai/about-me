@@ -1,3 +1,3 @@
 <template>
-	<div>Skill Set</div>
+	<div>Projects</div>
 </template>

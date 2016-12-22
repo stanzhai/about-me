@@ -5,7 +5,8 @@
     <img src="./assets/favicon.png" />
     <p>
       <router-link to="/skill">Skill</router-link>
-      <router-link to="/project">Project</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <router-link to="/experience">Experience</router-link>
     </p>
     <router-view></router-view>
   </div>
