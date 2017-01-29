@@ -40,19 +40,24 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "raw-loader"
+      },
+      {
+        test: /\.styl$/,
+        loader: ['style-loader', 'css-loader', 'stylus-loader']
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.common.js'
+      'vue$': 'vue/dist/vue.common.js',
+      'public': path.resolve(__dirname, './public')
     }
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, 'index.html'),
       template: 'src/index.html',
-      favicon: 'src/assets/favicon.png'
+      favicon: 'public/favicon.png'
     })
   ],
   devServer: {
