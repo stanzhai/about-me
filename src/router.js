@@ -1,21 +1,32 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Skill from './components/Skill.vue'
-import Projects from './components/Projects.vue'
-import Experience from './components/Experience.vue'
+import Vue from 'vue'
+import Router from 'vue-router'
 
-Vue.use(VueRouter);
+function route (path, view) {
+  return {
+    path: path,
+    component: require(`./views/${view}View.vue`)
+  }
+}
 
-const routes = [
-  { path: '/', component: Skill },
-  { path: '/skill', component: Skill },
-  { path: '/projects', component: Projects },
-  { path: '/experience', component: Experience }
-];
+Vue.use(Router)
 
-const router = new VueRouter({
-  routes,
-  mode: 'history'
-});
+const router = new Router({
+  base: __dirname,
+  mode: 'history',
+  scrollBehavior: () => ({ y: 0 }),
+  routes: [
+    route('/', 'About'),
+    route('/test', 'Test'),
+    { path: '*', redirect: '/' }
+  ]
+})
 
-export default router;
+router.beforeEach((to, from, next) => {
+    if (typeof ga !== 'undefined') {
+        ga('set', 'page', to.path)
+        ga('send', 'pageview')
+    }
+    next()
+})
+
+export default router

@@ -1,3 +1,0 @@
-<template>
-	<div>Skill Set</div>
-</template>
