@@ -7,7 +7,7 @@
       <main-side/>
       <v-content>
         <v-container fluid>
-          <transition mode="out-in">
+          <transition name="slide" mode="out-in">
             <router-view @view="meta"></router-view>
           </transition>
         </v-container>

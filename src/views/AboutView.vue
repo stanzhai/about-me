@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="view">
     <section>
       <section-text>
         <dt slot="title">Test</dt>

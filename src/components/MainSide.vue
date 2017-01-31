@@ -1,7 +1,7 @@
 <template>
   <v-sidebar fixed ripple router unshift v-bind:items="items">
   	<div class="vuetify" slot="top">
-      <router-link to="/about" class="sidebar__logo" />
+      <router-link to="/about" class="sidebar__logo">About</router-link>
       <v-divider light />
   	</div>
   </v-sidebar>
