@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="view">
     <section>
       <section-text>
-        <dt slot="title">Test2</dt>
-        <dd slot="desc">Fill2</dd>
+        <dt slot="title">Test</dt>
+        <dd slot="desc">Fill</dd>
       </section-text>
     </section>
   </div>
@@ -12,7 +12,7 @@
 <script>
   export default {
     mounted () {
-      this.$emit('view', 'Test')
+      this.$emit('view', 'Education')
     },
 
     preFetch () {

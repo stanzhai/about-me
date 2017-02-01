@@ -15,8 +15,11 @@ const router = new Router({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
-    route('/', 'About'),
-    route('/test', 'Test'),
+    route('/', 'Index'),
+    route('/skills', 'Skills'),
+    route('/experience', 'Experience'),
+    route('/projects', 'Projects'),
+    route('/education', 'Education'),
     { path: '*', redirect: '/' }
   ]
 })

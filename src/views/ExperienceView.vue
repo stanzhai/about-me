@@ -12,7 +12,7 @@
 <script>
   export default {
     mounted () {
-      this.$emit('view', 'About')
+      this.$emit('view', 'Experience')
     },
 
     preFetch () {

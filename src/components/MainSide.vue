@@ -1,8 +1,26 @@
 <template>
   <v-sidebar fixed ripple router unshift v-bind:items="items">
-  	<div class="vuetify" slot="top">
-      <router-link to="/about" class="sidebar__logo">About</router-link>
-      <v-divider light />
+  	<div class="header" slot="top">
+      <router-link to="/" class="sidebar__logo">
+        <img src="public/head.jpeg" height="128" width="128" />
+        <div class="name">Stan Zhai</div>
+      </router-link>
+      <div class="sidebar__links">
+        <a href="https://github.com/stanzhai" target="_blank">
+          <img src="public/github.png" alt="GitHub" />
+        </a>
+        <a href="http://blog.zhaishidan.cn" target="_blank">
+          <img src="public/blog.png" alt="Blog" />
+        </a>
+        <a href="mailto:mail@zhaishidan.cn">
+          <img src="public/mail.png" alt="Mail" />
+        </a>
+      </div>
+      <div>View source?</div>
+      <div class="gitter">
+        Find the source code at 
+        <a href="https://github.com/stanzhai/about-me" target="_blank">GitHub</a>
+      </div>
   	</div>
   </v-sidebar>
 </template>
@@ -12,84 +30,14 @@
     data () {
       return {
         items: [
-          { header: 'Core Documentation' },
-          { href: '/', title: 'About', action: { icon: 'question_answer' } },
-          { href: '/test', title: 'Test', action: 'fast_forward' },
-          { href: '/server-side-rendering', title: 'Server Side Rendering', action: 'cloud_circle' },
-          { href: '/event-bus', title: 'Event Bus', action: 'device_hub' },
-          { href: '/layouts', title: 'Layouts', action: 'devices' },
-          {
-            title: 'Components',
-            action: 'widgets',
-            group: '/components',
-            items: [
-              { href: '/components/alerts', title: 'Alerts' },
-              { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
-              { href: '/components/buttons', title: 'Buttons' },
-              { href: '/components/cards', title: 'Cards' },
-              { href: '/components/chips', title: 'Chips' },
-              { href: '/components/collapsible', title: 'Collapsible' },
-              { href: '/components/dividers', title: 'Dividers', disabled: true },
-              { href: '/components/dropdowns', title: 'Dropdowns' },
-              { href: '/components/footer', title: 'Footer' },
-              { href: '/components/forms', title: 'Forms' },
-              { href: '/components/icons', title: 'Icons' },
-              { href: '/components/lists', title: 'Lists', action: { icon: 'update', class: 'success--text' } },
-              { href: '/components/modals', title: 'Modals' },
-              { href: '/components/navbar', title: 'Navbars' },
-              { href: '/components/pagination', title: 'Pagination' },
-              { href: '/components/parallax', title: 'Parallax' },
-              { href: '/components/progress-circular', title: 'Progress Circular' },
-              { href: '/components/progress-linear', title: 'Progress Linear', action: { icon: 'fiber_new', class: 'success--text' } },
-              { href: '/components/sidebar', title: 'Sidebars', action: { icon: 'update', class: 'success--text' } },
-              { href: '/components/slider', title: 'Sliders' },
-              { href: '/components/tabs', title: 'Tabs' }
-            ]
-          },
-          {
-            title: 'Directives',
-            action: 'polymer',
-            group: '/directives',
-            items: [
-              { href: '/directives/badges', title: 'Badges' },
-              { href: '/directives/ripples', title: 'Ripples' },
-              { href: '/directives/tooltips', title: 'Tooltips' }
-            ]
-          },
-          {
-            title: 'Functions', 
-            action: 'functions',
-            group: '/functions',
-            items: [
-              { href: '/functions/toasts', title: 'Toasts' }
-            ]
-          },
-          {
-            title: 'CSS', 
-            action: 'brush',
-            group: '/css',
-            items: [
-              { href: '/css/typography', title: 'Typography' },
-              { href: '/css/content', title: 'Content' },
-              { href: '/css/grid', title: 'Grid' },
-              { href: '/css/colors', title: 'Colors' },
-              { href: '/css/tables', title: 'Tables' },
-            ]
-          },
-          {
-            title: 'Helpers', 
-            action: 'build',
-            group: '/helpers',
-            items: [
-              { href: '/helpers/spacing', title: 'Spacing' },
-              { href: '/helpers/alignment', title: 'Alignment' },
-              { href: '/helpers/display', title: 'Display' }
-            ]
-          },
           { divider: true, light: true },
-          { header: 'Additional Documentation' },
-          { title: 'Optimization', action: 'flash_on', disabled: true },
-          { title: 'Deployment', action: 'important_devices', disabled: true },
+          { header: 'Core Info' },
+          { href: '/skills', title: 'Skills', action: 'layers' },
+          { href: '/experience', title: 'Experience', action: 'verified_user' },
+          { href: '/projects', title: 'Projects', action: 'screen_share' },
+          { href: '/education', title: 'Education', action: 'school' },
+          { divider: true, light: true },
+          { header: 'Additional Info' },
           { title: 'Examples', action: 'web', disabled: true },
         ]
       }
@@ -121,29 +69,36 @@
         i
           padding: 0
   
-  .vuetify
+  .header
     text-align: center
-    margin-top: 16px
+    margin-top: 32px
     color: #fff
+
+    .name
+      font-weight: bold
+      font-size: 20px
         
     .sidebar__logo
       display: block
       position: relative
-      margin-bottom: 16px
+      margin-bottom: 20px
       text-decoration: none
       
       img
-        height: 100px
+        border-radius: 10px
     
     a
       color: #fff
       
     .gitter
-      margin-bottom: 16px
+      margin-bottom: 20px
         
   .sidebar__item-header
     color: #fff
     
   .sidebar__item
     color: #fff
+
+  .list__tile--active
+    background: rgba(0,0,0,0.12)
 </style>

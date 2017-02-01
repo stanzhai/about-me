@@ -1,6 +1,6 @@
 <template>
   <v-navbar>
-    <v-navbar-logo class="hidden-sm-and-down" v-text="title"></v-navbar-logo>
+    <v-navbar-logo class="hidden-sm-and-down">{{ title }}</v-navbar-logo>
   </v-navbar>
 </template>
 
