@@ -1,8 +1,6 @@
 <template>
-  <v-app top-navbar footer left-fixed-sidebar>
-    <header>
-      <main-nav v-bind:title="title"/>
-    </header>
+  <v-app left-fixed-sidebar top-fixed-navbar footer>
+    <main-nav v-bind:title="title"/>
     <main>
       <main-side/>
       <v-content>

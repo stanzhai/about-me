@@ -1,5 +1,5 @@
 <template>
-  <v-sidebar fixed ripple router unshift v-bind:items="items">
+  <v-sidebar id="mainsidebar" fixed ripple router unshift v-bind:items="items">
   	<div class="header" slot="top">
       <router-link to="/" class="sidebar__logo">
         <img src="public/head.jpeg" height="128" width="128" />
