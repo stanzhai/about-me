@@ -2,18 +2,18 @@
   <v-sidebar id="mainsidebar" fixed ripple router unshift v-bind:items="items">
   	<div class="header" slot="top">
       <router-link to="/" class="sidebar__logo">
-        <img src="public/head.jpeg" height="128" width="128" />
+        <img src="public/avatar.jpeg" height="128" width="128" />
         <div class="name">Stan Zhai</div>
       </router-link>
       <div class="sidebar__links">
-        <a href="https://github.com/stanzhai" target="_blank">
-          <img src="public/github.png" alt="GitHub" />
+        <a href="https://github.com/stanzhai" target="_blank" v-tooltip:bottom="{ html: 'GitHub' }">
+          <img src="public/github.png" />
         </a>
-        <a href="http://blog.zhaishidan.cn" target="_blank">
-          <img src="public/blog.png" alt="Blog" />
+        <a href="http://blog.zhaishidan.cn" target="_blank" v-tooltip:bottom="{ html: 'Blog' }">
+          <img src="public/blog.png"/>
         </a>
-        <a href="mailto:mail@zhaishidan.cn">
-          <img src="public/mail.png" alt="Mail" />
+        <a href="mailto:mail@zhaishidan.cn" v-tooltip:bottom="{ html: 'E-Mail' }">
+          <img src="public/mail.png" />
         </a>
       </div>
       <div>View source?</div>
