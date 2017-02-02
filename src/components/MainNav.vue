@@ -16,7 +16,7 @@
   export default {
     data () {
       return {
-        subTitle: 'test'
+        subTitle: ''
       }
     },
 
@@ -68,7 +68,7 @@
         height: 50px
         
         h1
-          font-size: 4vw
+          font-size: 6vw
           
     #app
       padding-top: 50px
