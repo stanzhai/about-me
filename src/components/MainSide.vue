@@ -38,7 +38,8 @@
           { href: '/education', title: 'Education', action: 'school' },
           { divider: true, light: true },
           { header: 'Additional Info' },
-          { title: 'Examples', action: 'web', disabled: true },
+          { title: '<a href="https://www.zhihu.com/question/51314788/answer/144324074" target="_blank">Old Projects</a>', action: 'redeem' },
+          { title: '<a href="https://github.com/stanzhai/resume" target="_blank">Resume</a>', action: 'receipt' }
         ]
       }
     }
@@ -101,4 +102,8 @@
 
   .list__tile--active
     background: rgba(0,0,0,0.12)
+
+  .list__tile__title a
+    color: #fff
+    text-decoration: none
 </style>
