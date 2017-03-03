@@ -9,7 +9,7 @@
         <a href="https://github.com/stanzhai" target="_blank" v-tooltip:bottom="{ html: 'GitHub' }">
           <img src="public/github.png" />
         </a>
-        <a href="http://blog.zhaishidan.cn" target="_blank" v-tooltip:bottom="{ html: 'Blog' }">
+        <a href="http://blog.stanzhai.site" target="_blank" v-tooltip:bottom="{ html: 'Blog' }">
           <img src="public/blog.png"/>
         </a>
         <a href="mailto:mail@zhaishidan.cn" v-tooltip:bottom="{ html: 'E-Mail' }">
