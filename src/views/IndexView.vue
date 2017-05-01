@@ -2,25 +2,16 @@
   <div class="view">
     <section>
       <section-header>About</section-header>
-      <v-container fluid>
-        <v-row>
-          <v-col xs12 sm12 md12 lg6>
-            <v-list three-line>
-              <v-list-item class="my-3">
-                <v-list-tile tag="div">
-                  <v-list-tile-avatar>
-                    <v-icon class="primary white--text">widgets</v-icon>
-                  </v-list-tile-avatar>
-                  <v-list-tile-content>
-                    <v-list-tile-title>Test</v-list-tile-title>
-                    <v-list-tile-sub-title>test</v-list-tile-sub-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list-item>
-            </v-list>
-          </v-col>
-        </v-row>
-      </v-container>
+      <blockquote>
+        Hi, I am Stan Zhai(翟士丹), like programming. Focus on big data technologies.
+        </br>
+        Work on Spark, Hadoop and it's ecosystem projects. I'm a contributor of Apache Spark.
+        </br>
+        </br>
+        I publish my ideas and findings on my <a href="http://blog.stanzhai.site">blog</a>.
+        </br>
+        <a href="mailto:mail@stanzhai.site">Shot me a message</a> if you are intrested in working with me. 
+      </blockquote>
     </section>
   </div>
 </template>
@@ -39,3 +30,8 @@
     }
   }
 </script>
+
+<style lang="stylus">
+blockquote
+  margin: 45px auto 15px
+</style>

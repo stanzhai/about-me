@@ -12,7 +12,7 @@
         <a href="http://blog.stanzhai.site" target="_blank" v-tooltip:bottom="{ html: 'Blog' }">
           <img src="public/blog.png"/>
         </a>
-        <a href="mailto:mail@zhaishidan.cn" v-tooltip:bottom="{ html: 'E-Mail' }">
+        <a href="mailto:mail@stanzhai.site" v-tooltip:bottom="{ html: 'E-Mail' }">
           <img src="public/mail.png" />
         </a>
       </div>

@@ -4,7 +4,7 @@
       <div class="fb-like"></div>
       <a class="white--text" href="http://github.com/stanzhai" target="_blank">Follow @stanzhai</a>
     </div>
-  	<div class="copy">© 2017 <a class="white--text" href="http://zhaishidan.cn">Stan Zhai</a></div>
+  	<div class="copy">© 2017 <a class="white--text" href="http://stanzhai.site">Stan Zhai</a></div>
   </v-footer>
 </template>
 
